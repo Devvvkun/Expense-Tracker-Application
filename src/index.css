@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer components {
+  .link-style {
+    @apply w-auto flex font-bold;
+  }
+}
