@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom"
+import {  NavLink } from "react-router-dom"
 import { LayoutPanelLeft,BadgeDollarSign,ClipboardMinus,FolderMinus,Settings,Goal,HandCoins } from 'lucide-react';
 import UserDetail from "./UserDetail";
 const Navbar = () => {
+   const navclass = ({isActive}) =>{
+    return(
+    `w-auto flex  font-bold ${isActive ? ' bg-sky-300 text-blue-500 shadow-amber-500 shadow-sm  w-5 pl-2 py-2 rounded-xl' :'text-black'}`
+   )}
   return (
     <>
     <div className="Navbar bg-purple-400  h-screen absolute left-0 min-w-[20%]">
@@ -9,14 +13,14 @@ const Navbar = () => {
             <div className="logo rounded-full py-2 px-4 ml-5 bg-gray-800 text-white">E</div>
             <h3 className="pt-2 ml-2 font-bold">Personal Expense Tracker</h3>
         </div>
-        <div className="relative top-5 ml-15 flex flex-col">
-        <Link to='/' className="link-style"><LayoutPanelLeft /> Dashboard</Link> <br />
-        <Link to='/transactions' className="link-style"><BadgeDollarSign />Transactions</Link><br />
-        <Link to='/budgets' className="link-style"><ClipboardMinus />Budgets</Link><br />
-        <Link to='/reports' className="link-style"><FolderMinus />Reports</Link><br />
-        <Link to='/upi' className="link-style"><HandCoins />UPI(beta)</Link><br />
-        <Link to='/goals' className="link-style"><Goal />Goals</Link><br />
-        <Link to='/settings' className="link-style"><Settings />Settings</Link><br />
+        <div className="relative top-5 ml-15 w-45 pl-6 justify-center flex flex-col">
+        <NavLink to='/'  className={navclass}><LayoutPanelLeft /> Dashboard</NavLink> <br />
+        <NavLink to='/transactions' className={navclass}><BadgeDollarSign />Transactions</NavLink><br />
+        <NavLink to='/budgets' className={navclass}><ClipboardMinus />Budgets</NavLink><br />
+        <NavLink to='/reports' className={navclass}><FolderMinus />Reports</NavLink><br />
+        <NavLink to='/upi' className={navclass}><HandCoins />UPI(beta)</NavLink><br />
+        <NavLink to='/goals' className={navclass}><Goal />Goals</NavLink><br />
+        <NavLink to='/settings' className={navclass}><Settings />Settings</NavLink><br />
         </div>
         <UserDetail />
     </div>
