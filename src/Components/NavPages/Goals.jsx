@@ -2,7 +2,7 @@ import React from 'react'
 
 const Goals = () => {
   return (
-    <div>Goals</div>
+    <div className='flex justify-center'>Goals</div>
   )
 }
 

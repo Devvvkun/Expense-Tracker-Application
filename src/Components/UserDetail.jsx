@@ -3,10 +3,12 @@ import UserPfp from '../Assets/UserPfp'
 
 const UserDetail = () => {
   return (
-    <div>
+    <div className='flex gap-2 absolute bottom-5'>
         <UserPfp />
-        <h3>User</h3>
-        <p>Email@gmail.com</p>
+        <div>
+          <h3>User</h3>
+          <p>Email@gmail.com</p>
+        </div>
     </div>
   )
 }

@@ -1,11 +1,11 @@
-import Body from './Body'
 import './index.css'
+import NavRoute from './Routes/NavRoute'
 
 function App() {
 
   return (
    <>
-  <Body />   
+  <NavRoute />  
    </>
   )
 }

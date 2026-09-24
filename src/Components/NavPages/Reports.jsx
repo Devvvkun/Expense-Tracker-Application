@@ -2,7 +2,7 @@ import React from 'react'
 
 const Reports = () => {
   return (
-    <div>Reports</div>
+    <div className='flex justify-center'>Reports</div>
   )
 }
 

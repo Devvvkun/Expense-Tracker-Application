@@ -2,7 +2,7 @@ import React from 'react'
 
 const Budgets = () => {
   return (
-    <div>Budgets</div>
+    <div className='flex justify-center'>Budgets</div>
   )
 }
 
