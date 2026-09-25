@@ -8,7 +8,7 @@ const Body = () => {
        <aside className='w-[21%]'>
         <Navbar />
         </aside>
-        <main className='w-[84%] h-screen bg-purple-200'>
+        <main className='w-[84%] h-screen bg-gray-200'>
         <Outlet />
         </main>
     </div>

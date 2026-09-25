@@ -8,7 +8,7 @@ const Navbar = () => {
    )}
   return (
     <>
-    <div className="Navbar bg-purple-400  h-screen absolute left-0 min-w-[20%]">
+    <div className="Navbar white  h-screen absolute left-0 min-w-[20%]">
         <div className="logoBox flex pt-5">
             <div className="logo rounded-full py-2 px-4 ml-5 bg-gray-800 text-white">E</div>
             <h3 className="pt-2 ml-2 font-bold">Personal Expense Tracker</h3>
