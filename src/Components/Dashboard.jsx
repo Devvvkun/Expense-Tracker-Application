@@ -1,8 +1,13 @@
 import React from 'react'
+import SearchBar from './DashboardComponenets/SearchBar'
 
 const Dashboard = () => {
   return (
-      <div className='flex justify-center items-center'>Dashboard</div>
+      <div className=''>
+        <SearchBar />
+        Dashboard
+      
+      </div>
   )
 }
 
