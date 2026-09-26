@@ -4,7 +4,7 @@ import UserDetail from "./UserDetail";
 const Navbar = () => {
    const navclass = ({isActive}) =>{
     return(
-    `w-auto flex  font-bold ${isActive ? ' bg-sky-300 text-blue-500 shadow-amber-500 shadow-sm  w-5 pl-2 py-2 rounded-xl' :'text-black'}`
+    `w-auto flex  font-bold ${isActive ? ' bg-sky-200 text-blue-500 shadow-amber-500 shadow-sm  w-5 pl-2 py-2 rounded-xl' :'text-black'}`
    )}
   return (
     <>

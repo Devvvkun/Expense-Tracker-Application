@@ -1,10 +1,9 @@
-import React from 'react'
-import SearchBar from './DashboardComponenets/SearchBar'
+import DashboardHeader from "./DashboardComponenets/DashboardHeader"
 
 const Dashboard = () => {
   return (
-      <div className=''>
-        <SearchBar />
+      <div className=' w-'>
+        <DashboardHeader />
         Dashboard
       
       </div>
