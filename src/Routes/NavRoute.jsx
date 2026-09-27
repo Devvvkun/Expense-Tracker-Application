@@ -1,5 +1,5 @@
 import {Routes , Route} from 'react-router-dom'
-import Dashboard from '../Components/Dashboard'
+import Dashboard from '../Components/NavPages/Dashboard'
 import Transactions from '../Components/NavPages/Transactions'
 import Budgets from '../Components/NavPages/Budgets'
 import Goals from '../Components/NavPages/Goals'

@@ -1,4 +1,4 @@
-import DashboardHeader from "./DashboardComponenets/DashboardHeader"
+import DashboardHeader from "../DashboardComponenets/DashboardHeader"
 
 const Dashboard = () => {
   return (
