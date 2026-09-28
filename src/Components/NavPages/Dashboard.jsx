@@ -1,10 +1,11 @@
-import DashboardHeader from "../DashboardComponenets/DashboardHeader"
+import DashboardHeader from "../DashboardComponents/DashboardHeader"
+import TransactionBody from "../TransactionComponents/TransactionBody"
 
 const Dashboard = () => {
   return (
       <div className=' w-'>
         <DashboardHeader />
-        Dashboard
+        <TransactionBody />
       
       </div>
   )

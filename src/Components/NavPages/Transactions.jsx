@@ -1,7 +1,8 @@
 
-import TransactionHeader from '../TransactionComponenets/TransactionHeader'
-import SearchBar from '../DashboardComponenets/SearchBar'
-import TransactionCalender from '../TransactionComponenets/TransactionCalender'
+import TransactionHeader from '../TransactionComponents/TransactionHeader'
+import SearchBar from '../DashboardComponents/SearchBar'
+import TransactionCalender from '../TransactionComponents/TransactionCalender'
+import FilterDivHeader from '../TransactionComponents/FilterDivHeader'
 const Transactions = () => {
   
   
@@ -12,6 +13,7 @@ const Transactions = () => {
           <div className="search pl-6 -pt-3 -mt-6"><SearchBar /></div>
           <TransactionCalender />
         </div>
+        <FilterDivHeader />
       </div>
   )
 }
