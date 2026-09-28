@@ -1,8 +1,10 @@
 import React from 'react'
-
-const Cash = () => {
+import { NavLink } from 'react-router-dom'
+const Cash = ({className}) => {
   return (
-    <div>Cash</div>
+    <div >
+      <NavLink className={className}>Cash</NavLink>
+    </div>
   )
 }
 

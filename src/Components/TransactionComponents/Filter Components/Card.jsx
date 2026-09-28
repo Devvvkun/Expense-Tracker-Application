@@ -1,8 +1,10 @@
 import React from 'react'
-
-const Card = () => {
+import { NavLink } from 'react-router-dom'
+const Card = ({className}) => {
   return (
-    <div>Card</div>
+    <div >
+      <NavLink className={className}>Cards</NavLink>
+    </div>
   )
 }
 

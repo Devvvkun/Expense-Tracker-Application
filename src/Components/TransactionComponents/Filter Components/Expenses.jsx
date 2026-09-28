@@ -1,8 +1,10 @@
 import React from 'react'
-
-const Expenses = () => {
+import { NavLink } from 'react-router-dom'
+const Expenses = ({className}) => {
   return (
-    <div>Expenses</div>
+    <div>
+      <NavLink className={className}>Expenses</NavLink>
+    </div>
   )
 }
 

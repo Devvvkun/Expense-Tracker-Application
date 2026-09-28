@@ -1,8 +1,10 @@
 import React from 'react'
-
-function UPI() {
+import { NavLink } from 'react-router-dom'
+function UPI({className}) {
   return (
-    <div>UPI</div>
+    <div>
+      <NavLink className={className}>UPI</NavLink>
+    </div>
   )
 }
 
