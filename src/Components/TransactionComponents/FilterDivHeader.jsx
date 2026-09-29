@@ -9,7 +9,7 @@ const FilterDivHeader = () => {
         return `${isActive ? 'bg-green-400': 'bg-gray-300'} w-19 h-10 flex justify-center items-center rounded-sm px-4 py-2 `
     }
   return (
-    <div className='flex items-center justify-around'>
+    <div className='flex items-center justify-around mt-5'>
         <Add className={FilterDivClicked} />
         <Income className={FilterDivClicked}/>
         <UPI className={FilterDivClicked}/>
