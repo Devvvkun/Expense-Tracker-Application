@@ -1,9 +1,8 @@
 import { EllipsisVertical } from "lucide-react"
-import TransactionsData from "../../Data/TransactionsData"
-const TransactionBody = () => {
+const TransactionBody = ({filteredData}) => {
   return (
     <>
-    {TransactionsData.map((data)=>{
+    {filteredData.map((data)=>{
       console.log(data);
       
       return(

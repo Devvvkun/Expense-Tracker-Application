@@ -1,10 +1,11 @@
-import { useState } from 'react'
 import { Calendar , ChevronDown } from 'lucide-react'
-import TransactionsData from '../../Data/TransactionsData'
-const TransactionCalender = () => {
-    const [editDate , seteditDate] = useState(false);
-    const [Startdate, setStartdate] = useState(TransactionsData[0].date)
-    const [Enddate, setEnddate] = useState(TransactionsData[29].date)
+const TransactionCalender = ({editDate,
+  seteditDate,
+  Startdate,
+  Enddate,
+  setEnddate,
+  setStartdate}) => {
+
     function handleSDate(e){
       setStartdate(e.target.value)
     }
