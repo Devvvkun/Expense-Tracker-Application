@@ -7,7 +7,7 @@ const TransactionBody = ({filteredData}) => {
           <div
   key={data.id}
   className="bg-white w-[96%] text-black h-22 m-5
-             grid grid-cols-[100px_1fr_150px_40px] items-center"
+             grid grid-cols-[100px_1fr_150px_40px] items-center rounded-sm"
 >
   {/* Logo */}
   <div className="h-14 w-14 rounded-full bg-green-400
