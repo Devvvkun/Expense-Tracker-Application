@@ -3,8 +3,6 @@ const TransactionBody = ({filteredData}) => {
   return (
     <>
     {filteredData.map((data)=>{
-      console.log(data);
-      
       return(
           <div
   key={data.id}
