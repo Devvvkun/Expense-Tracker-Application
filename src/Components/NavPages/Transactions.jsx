@@ -32,7 +32,7 @@ const Transactions = () => {
  />
         </div>
         <FilterDivHeader />
-        <TransactionBody filteredData={filteredData}/>
+        <TransactionBody filteredData={filteredData} />
       </div>
   )
 }

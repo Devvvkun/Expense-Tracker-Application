@@ -1,8 +1,10 @@
 import { EllipsisVertical } from "lucide-react"
+import TransactionLogoData from '../../Data/TransactionLogoData'
 const TransactionBody = ({filteredData}) => {
   return (
     <>
     {filteredData.map((data)=>{
+      const Icons = TransactionLogoData[data.merchant]
       return(
           <div
   key={data.id}
@@ -12,7 +14,7 @@ const TransactionBody = ({filteredData}) => {
   {/* Logo */}
   <div className="h-14 w-14 rounded-full bg-green-400
                   flex justify-center items-center ml-10">
-    M
+    <Icons />
   </div>
 
   {/* Transaction details */}
