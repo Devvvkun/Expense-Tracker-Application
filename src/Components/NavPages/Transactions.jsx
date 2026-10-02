@@ -6,15 +6,14 @@ import TransactionCalender from '../TransactionComponents/TransactionCalender'
 import FilterDivHeader from '../TransactionComponents/FilterDivHeader'
 import TransactionsData from '../../Data/TransactionsData'
 const Transactions = () => {
-    const [editDate , seteditDate] = useState(false);
-    const [Startdate, setStartdate] = useState(TransactionsData[29].date)
-    const [Enddate, setEnddate] = useState(TransactionsData[0].date)  
-    const filteredData =  TransactionsData.filter(Transaction => Startdate <= Transaction.date && Transaction.date <= Enddate)
     const filteredDate = TransactionsData.map(transaction => transaction.date)
     const sortedDate = filteredDate.sort()
-    let minDate = sortedDate[0]
-    let maxDate = sortedDate[29]
-    
+    let minDate = sortedDate[0]   
+    let maxDate = sortedDate[sortedDate.length - 1]
+    const [editDate , seteditDate] = useState(false);
+    const [Startdate, setStartdate] = useState(minDate)
+    const [Enddate, setEnddate] = useState(maxDate)  
+    const filteredData =  TransactionsData.filter(Transaction => Startdate <= Transaction.date && Transaction.date <= Enddate)
   return (
     <div className=' h-screen overflow-auto'>
         <TransactionHeader />

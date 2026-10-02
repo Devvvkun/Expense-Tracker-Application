@@ -1,10 +1,14 @@
-import { EllipsisVertical } from "lucide-react"
+import {
+  EllipsisVertical,
+  CircleHelp
+} from "lucide-react";
 import TransactionLogoData from '../../Data/TransactionLogoData'
 const TransactionBody = ({filteredData}) => {
   return (
     <>
     {filteredData.map((data)=>{
-      const Icons = TransactionLogoData[data.merchant]
+      const Icons = TransactionLogoData[data.merchant] || CircleHelp
+   
       return(
           <div
   key={data.id}
@@ -22,7 +26,7 @@ const TransactionBody = ({filteredData}) => {
     <h2 className="font-bold text-xl">{data.merchant}</h2>
 
     <div className="flex items-center gap-4">
-      <div>{data.category}</div>
+      <div>{data.category} </div> 
       <div>{data.time}</div>
       <div>{data.paymentMethod}</div>
     </div>
@@ -30,7 +34,7 @@ const TransactionBody = ({filteredData}) => {
 
   {/* Amount */}
   <div className={`text-right pr-8 font-bold ${data.type == 'expense' ? "text-red-500" : "text-green-400"}`}>
-    ₹{data.amount}
+   {data.type == 'income' ? "+" : "-"} ₹{data.amount}
   </div>
 
   {/* Menu */}
