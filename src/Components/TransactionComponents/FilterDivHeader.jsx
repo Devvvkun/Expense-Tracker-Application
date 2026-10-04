@@ -1,7 +1,9 @@
 import Add from './Filter Components/Add'
 import Card from './Filter Components/Card'
 import Cash from './Filter Components/Cash'
+import Category from './Filter Components/Category'
 import Expenses from './Filter Components/Expenses'
+import Filter from './Filter Components/Filter'
 import Income from './Filter Components/Income'
 import UPI from './Filter Components/UPI'
 const FilterDivHeader = () => {
@@ -16,6 +18,8 @@ const FilterDivHeader = () => {
         <Card className={FilterDivClicked}/>
         <Cash className={FilterDivClicked}/>
         <Expenses className={FilterDivClicked}/>
+        <Category />
+        <Filter />
     </div>
   )
 }
