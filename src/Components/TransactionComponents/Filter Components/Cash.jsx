@@ -1,9 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
 const Cash = ({className}) => {
   return (
     <div >
-      <NavLink className={className}>Cash</NavLink>
+      <button className={className}>Cash</button>
     </div>
   )
 }
