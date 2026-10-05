@@ -15,13 +15,11 @@ const TransactionBody = ({filteredData}) => {
   className="bg-white w-[96%] text-black h-22 m-5
              grid grid-cols-[100px_1fr_150px_40px] items-center rounded-sm"
 >
-  {/* Logo */}
   <div className="h-14 w-14 rounded-full bg-green-400
                   flex justify-center items-center ml-10">
     <Icons />
   </div>
 
-  {/* Transaction details */}
   <div>
     <h2 className="font-bold text-xl">{data.merchant}</h2>
 
@@ -31,13 +29,9 @@ const TransactionBody = ({filteredData}) => {
       <div>{data.paymentMethod}</div>
     </div>
   </div>
-
-  {/* Amount */}
   <div className={`text-right pr-8 font-bold ${data.type == 'expense' ? "text-red-500" : "text-green-400"}`}>
    {data.type == 'income' ? "+" : "-"} ₹{data.amount}
   </div>
-
-  {/* Menu */}
   <div>
     <EllipsisVertical />
   </div>

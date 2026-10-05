@@ -1,8 +1,8 @@
 import React from 'react'
-const Card = ({className}) => {
+const Card = ({Activebtn , setActivebtn}) => {
   return (
     <div >
-      <button className={className}>Cards</button>
+      <button className={ Activebtn == 'Card' ? 'filter-active' : 'filter-inactive'} onClick={()=> setActivebtn('Card')}>Card </button>
     </div>
   )
 }

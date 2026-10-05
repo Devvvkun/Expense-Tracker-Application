@@ -5,8 +5,12 @@
 /*======================
     404 page
 =======================*/
-
-
+@utility filter-active {
+  @apply bg-sky-200 text-blue-500 shadow-amber-500 shadow-sm  py-2 px-4 flex justify-center w-auto rounded-xl;
+}
+@utility filter-inactive{
+  @apply  px-4 py-2 bg-gray-300 rounded-sm;
+}
 .page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
 }
 
