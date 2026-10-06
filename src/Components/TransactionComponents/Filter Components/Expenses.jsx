@@ -1,9 +1,8 @@
 import React from 'react'
-const Expenses = ({className}) => {
+const Expenses = ({Activebtn , setActivebtn}) => {
   return (
-    <div>
-      <button className={className}>Expenses</button>
-    </div>
+
+      <button className={ Activebtn == 'Expenses' ? 'filter-active' : 'filter-inactive'} onClick={()=> setActivebtn('Expenses')}>Expenses</button>
   )
 }
 

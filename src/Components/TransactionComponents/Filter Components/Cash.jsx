@@ -1,8 +1,8 @@
-const Cash = ({className}) => {
+const Cash = ({Activebtn , setActivebtn}) => {
   return (
-    <div >
-      <button className={className}>Cash</button>
-    </div>
+  
+      <button className={ Activebtn == 'Cash' ? 'filter-active' : 'filter-inactive'} onClick={()=> setActivebtn('Cash')}>Cash</button>
+  
   )
 }
 

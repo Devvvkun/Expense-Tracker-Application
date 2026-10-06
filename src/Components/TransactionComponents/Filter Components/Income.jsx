@@ -1,8 +1,7 @@
 import React from 'react'
-const Income = ({className}) => {
+const Income = ({Activebtn , setActivebtn}) => {
   return (
-    <div className=''> <button className=
-    {className}>Income</button> </div>
+     <button className={ Activebtn == 'Income' ? 'filter-active' : 'filter-inactive'} onClick={()=> setActivebtn('Income')}>Income</button>
   )
 }
 

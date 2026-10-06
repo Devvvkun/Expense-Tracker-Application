@@ -1,9 +1,6 @@
 import React from 'react'
-function UPI({className}) {
-  return (
-    <div>
-      <button className={className}>UPI</button>
-    </div>
+function UPI({Activebtn , setActivebtn}) {
+  return (<button className={ Activebtn == 'UPI' ? 'filter-active' : 'filter-inactive'} onClick={()=> setActivebtn('UPI')}>UPI</button>
   )
 }
 
