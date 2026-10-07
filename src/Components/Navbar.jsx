@@ -1,9 +1,8 @@
 import {  NavLink } from "react-router-dom"
-import { useState } from "react";
 import { LayoutPanelLeft,BadgeDollarSign,ClipboardMinus,FolderMinus,Settings,Goal,HandCoins } from 'lucide-react';
 import UserDetail from "./UserDetail";
 const Navbar = () => {
-  const [NavbarOpen, setNavbarOpen] = useState(false)
+
    const navclass = ({isActive}) =>{
     return(
     `w-auto flex  font-bold ${isActive ? 'filter-active' :'text-black'}`
@@ -15,6 +14,7 @@ const Navbar = () => {
   h-screen w-64
   bg-white
   lg:translate-x-0
+
 ">
         <div className="logoBox flex pt-5">
             <div className="logo rounded-full py-2 px-4 ml-5 bg-gray-800 text-white">E</div>
