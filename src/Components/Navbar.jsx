@@ -17,7 +17,7 @@ const Navbar = () => {
 
 ">
         <div className="logoBox flex pt-5">
-            <div className="logo rounded-full py-2 px-4 ml-5 bg-gray-800 text-white">E</div>
+            <div className="logo rounded-full h-12 flex justify-center items-center w-13 py-2 px-4 ml-5 bg-gray-800 text-white">E</div>
             <h3 className="pt-2 ml-2 font-bold">Personal Expense Tracker</h3>
         </div>
         <div className="relative top-5 ml-15 w-45 pl-6 justify-center flex flex-col">

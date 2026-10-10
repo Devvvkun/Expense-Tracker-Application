@@ -33,7 +33,7 @@ const TransactionBody = ({filteredData}) => {
    {data.type == 'income' ? "+" : "-"} ₹{data.amount}
   </div>
   <div>
-    <EllipsisVertical />
+    <button ><EllipsisVertical /></button>
   </div>
 </div>
     )})}
