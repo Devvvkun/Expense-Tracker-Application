@@ -4,6 +4,7 @@ import {
 } from "lucide-react";
 import TransactionLogoData from '../../Data/TransactionLogoData'
 const TransactionBody = ({filteredData}) => {
+  const [MenuOpen, setMenuOpen] = useState(false)
   return (
     <>
     {filteredData.map((data)=>{
@@ -33,7 +34,8 @@ const TransactionBody = ({filteredData}) => {
    {data.type == 'income' ? "+" : "-"} ₹{data.amount}
   </div>
   <div>
-    <button ><EllipsisVertical /></button>
+    <button onClick={()=> setMenuOpen(true)}><EllipsisVertical /></button>
+    
   </div>
 </div>
     )})}
