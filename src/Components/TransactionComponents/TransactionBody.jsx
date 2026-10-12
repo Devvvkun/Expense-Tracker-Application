@@ -2,7 +2,9 @@ import {
   EllipsisVertical,
   CircleHelp
 } from "lucide-react";
+import { useState } from "react";
 import TransactionLogoData from '../../Data/TransactionLogoData'
+import TransactionDetailEdit from "./TransactionDetailEdit";
 const TransactionBody = ({filteredData}) => {
   const [MenuOpen, setMenuOpen] = useState(false)
   return (
@@ -34,8 +36,7 @@ const TransactionBody = ({filteredData}) => {
    {data.type == 'income' ? "+" : "-"} ₹{data.amount}
   </div>
   <div>
-    <button onClick={()=> setMenuOpen(true)}><EllipsisVertical /></button>
-    
+    <button onClick={()=> setMenuOpen(true)}>{MenuOpen  ? <TransactionDetailEdit /> : <EllipsisVertical />}</button>
   </div>
 </div>
     )})}
