@@ -8,7 +8,7 @@ const MobileNavbar = ({ NavbarOpen, setNavbarOpen }) => {
             aria-label={NavbarOpen ? "Close navigation" : "Open navigation"}
             aria-expanded={NavbarOpen}
         >
-            {NavbarOpen ? <X size={24} /> : <Menu size={24} />}
+            {NavbarOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
     );
 };
