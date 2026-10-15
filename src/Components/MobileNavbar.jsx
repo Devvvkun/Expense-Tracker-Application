@@ -13,5 +13,5 @@ const MobileNavbar = ({ NavbarOpen, setNavbarOpen }) => {
     );
 };
 
-export default MobileNavbar;
+export default MobileNavbar
 
